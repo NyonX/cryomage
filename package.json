@@ -1,0 +1,22 @@
+{
+  "name": "cryomage",
+  "version": "1.0.0",
+  "description": "Beta version of Cryomage",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "discord",
+    "bot"
+  ],
+  "author": "Aria Fong",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "github.com/fengxioayue/cryomage.git"
+  },
+  "dependencies": {
+    "discord.js": "^11.1.0"
+  }
+}
