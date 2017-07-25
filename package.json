@@ -1,8 +1,8 @@
 {
   "name": "cryomage",
-  "version": "1.0.0",
-  "description": "Beta version of Cryomage",
-  "main": "index.js",
+  "version": "2.6.0",
+  "description": "A discord.js moderation and talk bot developed by Aria Fong",
+  "main": "bot.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -11,12 +11,13 @@
     "bot"
   ],
   "author": "Aria Fong",
-  "license": "ISC",
+  "license": "MIT",
   "repository": {
     "type": "git",
     "url": "github.com/fengxioayue/cryomage.git"
   },
   "dependencies": {
     "discord.js": "^11.1.0"
-  }
+  },
+  "devDependencies": {}
 }
