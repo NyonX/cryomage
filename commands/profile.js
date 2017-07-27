@@ -1,4 +1,4 @@
-exports.run = (client, message, params) => {
+exports.run = (client, message, params,args) => {
     
     if (!params[0]) {
         let member = message.author;
@@ -75,6 +75,7 @@ exports.run = (client, message, params) => {
                 text: "Cryomage © Aria Fong"
             }
         }});
+
         message.delete(1,1);        
     }
 };

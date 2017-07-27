@@ -15,11 +15,11 @@ exports.run = (client, message) => {
     },
     {
         name: "Donate and Support",
-        value: "[Kofi](https://ko-fi.com/ariafong) | [Patreon](https://www.patreon.com/aria_nimue)"
+        value: "[Kofi](https://ko-fi.com/ariafong) | [Patreon](https://www.patreon.com/aria_nimue) | [GitHub](https://github.com/fengxiaoyue/cryomage)"
     },
     {
         name: "Version",
-        value: "2.6.0"
+        value: "2.8.0"
     }
     ],
     timestamp: new Date(),
