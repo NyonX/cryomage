@@ -9,11 +9,17 @@ exports.run = (client, message, params) => {
         let member = message.mentions.members.first();
         let user = message.mentions.users.first();
         let reason = message.content.split(/\s+/g).slice(2).join(" ");
-        member.createDM()
-            .then(channel => {
-            channel.send("You have been **warned** for ***"+reason+"***")
-            });
-        message.channel.send('**'+user.username+'** has been **warned** for ***'+reason+'***');
+        if (user.id!='261065932774965248'&&!user.bot) {
+            member.createDM()
+                .then(channel => {
+                channel.send("You have been **warned** for ***"+reason+"***")
+                });
+            message.channel.send('**'+user.username+'** has been **warned** for ***'+reason+'***');
+        }
+
+        else {
+            message.reply(user.username+' is **immune**!');
+        }
         message.delete(1,1);
     }
 };
