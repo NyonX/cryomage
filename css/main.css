@@ -20,8 +20,9 @@ h3 {
 #content {
   margin-right: 35%;
   margin-left: 35%;
-  height: 100%;
+  height: 80%;
   background-color: #3D3C5F;
+  padding: 1%;
 }
 
 nav ul {
@@ -34,8 +35,13 @@ a, a:hover, a:visited {
   color: inherit;
 }
 
+nav {
+  width: 100%;
+}
+
 nav ul li {
   display: inline-block;
   font-size: 14pt;
   color: #B6ECE9;
+  margin: 5%;
 }
