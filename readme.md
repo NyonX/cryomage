@@ -8,6 +8,9 @@ System Requirements
 To run her, you'll need Node.JS v.81, Python, and Discord.JS installed in your system.
 Cryo is very lightweight; it will not take much machine power for her to run.
 
+To set the token, run "set token TOKEN" or your OS's equivalent to setting environmental variables
+
+
 Development
 I started developing Cryo on June 29, 2017.
 It wasn't until July 13, 2017 that Cryo became stable at v1.0.
