@@ -3,14 +3,29 @@ body {
   text-align: center;
   margin: 0;
   padding: 0;
-  background: #2B5FAA fixed;
+  background: #3D3C5F fixed;
   color: #E0FFFB;
+}
+
+h1 {
+  font-size: 24pt;
+}
+
+h3 {
+  font-size: 18pt;
 }
 
 nav ul {
   list-style-type: none;
 }
 
+
 a, a:hover, a:visited {
   text-decoration: none;
+  color: inherit;
+}
+
+nav ul li {
+  display: inline-block;
+  font-size: 14pt;
 }
