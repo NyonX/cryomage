@@ -3,16 +3,24 @@ body {
   text-align: center;
   margin: 0;
   padding: 0;
-  background: #3D3C5F fixed;
+  background: fixed;
   color: #E0FFFB;
 }
 
 h1 {
   font-size: 24pt;
+  font-weight: normal;
 }
 
 h3 {
   font-size: 18pt;
+  font-weight: normal;
+}
+
+#content {
+  margin-right: 35%;
+  margin-left: 35%;
+  background-color: #3D3C5F;
 }
 
 nav ul {
@@ -28,4 +36,5 @@ a, a:hover, a:visited {
 nav ul li {
   display: inline-block;
   font-size: 14pt;
+  color: #B6ECE9;
 }
