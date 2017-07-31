@@ -34,10 +34,10 @@ module.exports = (client, message) => {
         message.channel.send('lmao');   
     }
 
-  if(message.content.indexOf(client.config.prefix) !== 0) return;
+  if(message.content.indexOf(process.env.prefix) !== 0) return;
 
   const args = message.content.split(/\s+/g);
-  const command = args.shift().slice(client.config.prefix.length).toLowerCase();
+  const command = args.shift().slice(process.env.prefix.length).toLowerCase();
 
   let perms = client.permlevel(message);
   const cmd = client.commands.get(command)
