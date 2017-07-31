@@ -1,33 +1,39 @@
 exports.run = (client, message, params,args) => {
     
     if (!params[0]) {
-        let member = message.author;
+        let user = message.author;
+        let member = message.member;
         message.channel.send({embed: {
             color: 3447003,
 
             author: {
-                name: member.username,
-                icon_url: member.avatarURL
+                name: user.username,
+                icon_url: user.avatarURL
             },
 
             fields: [
             
             {
                 name: "Username",
-                value: (member.username)+"#"+(member.discriminator)
+                value: user.username+"#"+user.discriminator
             },
             {
                 name: "ID",
-                value: (member.id)
+                value: user.id
             },
             {
-                name: "Bot",
-                value: (member.bot)
+                name: "Class",
+                value: member.highestRole.name
+            },                             
+            {
+                name: "Birth",
+                value: user.createdAt
             },
             {
-                name: "Account Creation",
-                value: (member.createdAt)
+                name: "Service",
+                value: member.joinedAt
             }
+
             ],
             
             timestamp: new Date(),
@@ -40,32 +46,37 @@ exports.run = (client, message, params,args) => {
     }
 
     else {
-        let member = message.mentions.users.first();
+        let user = message.mentions.users.first();
+        let member = message.mentions.members.first();
         message.channel.send({embed: {
             color: 3447003,
 
             author: {
-                name: member.username,
-                icon_url: member.avatarURL
+                name: user.username,
+                icon_url: user.avatarURL
             },
 
             fields: [
             
             {
                 name: "Username",
-                value: (member.username)+"#"+(member.discriminator)
+                value: user.username+"#"+user.discriminator
             },
             {
                 name: "ID",
-                value: (member.id)
+                value: user.id
             },
             {
-                name: "Bot",
-                value: (member.bot)
+                name: "Class",
+                value: member.highestRole.name
+            },                             
+            {
+                name: "Birth",
+                value: user.createdAt
             },
             {
-                name: "Account Creation",
-                value: (member.createdAt)
+                name: "Service",
+                value: member.joinedAt
             }
             ],
             

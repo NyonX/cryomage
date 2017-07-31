@@ -11,7 +11,7 @@ exports.run = (client, message) => {
     },
     {
         name: "Website",
-        value: "Under construction"
+        value: "http://cryo.ariaxiao.tech/"
     },
     {
         name: "Donate and Support",
@@ -19,7 +19,7 @@ exports.run = (client, message) => {
     },
     {
         name: "Version",
-        value: "2.8.0"
+        value: "2.9.0"
     }
     ],
     timestamp: new Date(),
