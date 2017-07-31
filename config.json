@@ -1,6 +1,6 @@
 {
   "ownerID": "261065932774965248",
-  "token": "",
+  // "token": "", NO NEED FOR THIS. READING FROM ENV VAR
   "prefix": "", 
   "modRoleName": "",
   "adminRoleName": ""
