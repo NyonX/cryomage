@@ -5,7 +5,7 @@ const readdir = promisify(require("fs").readdir);
 
 const client = new Discord.Client();
 
-client.config = require("./config.json");
+// client.config = require("./config.json");
 
 require("./modules/functions.js")(client);
 
