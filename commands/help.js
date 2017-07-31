@@ -13,7 +13,7 @@ exports.run = (client, message, params, level) => {
         name: "Command List",
         value: `Use ${client.config.prefix}help <command name> for details
 
-${myCommands.map(c =>`**${client.config.prefix}${c.help.name}**${' '.repeat(longest - c.help.name.length)} - ${c.help.description}`).join('\n')}`
+${myCommands.map(c =>`**${/*client.config.prefix*/}${c.help.name}**${' '.repeat(longest - c.help.name.length)} - ${c.help.description}`).join('\n')}`
     }],
     timestamp: new Date(),
     footer: {
