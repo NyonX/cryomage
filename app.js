@@ -44,6 +44,6 @@ client.aliases = new Discord.Collection();
     delete require.cache[require.resolve(`./events/${file}`)];
   });
   
-  client.login(client.config.token);
+  client.login(process.env.token);
 
 }());
