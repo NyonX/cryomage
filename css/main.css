@@ -1,5 +1,5 @@
 body {
-  font-family: 'Inconsolata', monospace;
+  font-family: 'Open Sans Condensed', sans-serif;
   text-align: center;
   margin: 0;
   padding: 0;
@@ -10,11 +10,13 @@ body {
 h1 {
   font-size: 24pt;
   font-weight: normal;
+  font-family: 'Cutive Mono', monospace;
 }
 
 h3 {
   font-size: 18pt;
   font-weight: normal;
+  font-family: 'Cutive Mono', monospace;
 }
 
 #content {
